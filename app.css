@@ -1,0 +1,82 @@
+/* app css stylesheet */
+
+.menu {
+    list-style: none;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 2em;
+    padding: 0 0 0.5em;
+}
+
+.menu:before {
+    content: "[";
+}
+
+.menu:after {
+    content: "]";
+}
+
+.menu > li {
+    display: inline;
+}
+
+.menu > li:before {
+    content: "|";
+    padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+    content: "";
+    padding: 0;
+}
+
+.stbody {
+    min-height: 70px;
+    margin-bottom: 10px;
+    border-bottom: dashed 1px #cc0000;
+}
+
+.stimg {
+    float: left;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #dedede;
+}
+
+.sttext {
+    margin-left: 70px;
+    min-height: 50px;
+    word-wrap: break-word;
+    overflow: hidden;
+    padding: 5px;
+    display: block;
+    font-family: 'Georgia', Times New Roman, Times, serif;
+}
+
+.sttime {
+    font-size: 11px;
+    color: #999;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+}
+
+#footer {
+    height: 60px;
+    background-color: #f5f5f5;
+}
+/* Lastly, apply responsive CSS fixes as necessary */
+
+@media (max-width: 767px) {
+    #footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+/* Custom page CSS
+      -------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.credit {
+    margin: 20px 0;
+}
